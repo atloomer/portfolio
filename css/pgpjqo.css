@@ -345,6 +345,7 @@ label[for="nav-input"] {
 }
 
 #portfolio h2 {
+  color: #E0DFD7;
   display: inline-block;
   font-size: 1.2em;
   letter-spacing: .35em;
@@ -811,6 +812,7 @@ textarea {
     cursor: pointer;
   }
   #portfolio h2 {
+    color: #E0DFD7;
     display: inline-block;
     font-size: 2em;
     letter-spacing: .35em;

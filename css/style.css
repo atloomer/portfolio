@@ -4,7 +4,7 @@
 /* External Stylesheet to my main site */
 
 li#alexloomer {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -77,4 +77,14 @@ img {
 #img15.lightbox img,
 #img16.lightbox img {
   width: 30%;
+}
+
+
+/* NOTE: FIX LIGHTBOX SIZES */
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  li#alexloomer {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
 }
