@@ -3,6 +3,11 @@
 
 /* External Stylesheet to my main site */
 
+li#alexloomer {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   background: #E0DFD7;
   margin-top: 3.84em;
