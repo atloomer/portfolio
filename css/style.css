@@ -1,0 +1,75 @@
+/* NOTE: CREATE DIVS FOR IMAGES FOR UNINTERUPTED PAGE LOADING TIME */
+
+
+/* External Stylesheet to my main site */
+
+body {
+  background: #E0DFD7;
+  margin-top: 3.84em;
+  width: 100%;
+}
+
+
+/* Portfolio Header */
+
+
+/* Fixing inherited hover state */
+
+#portfolio {
+  cursor: auto;
+}
+
+#portfolio:hover h2 {
+  padding: 1.5%;
+  color: #E0DFD7;
+  border: .15em solid #E0DFD7;
+}
+
+
+/* Images */
+
+img {
+  float: left;
+  width: 48%;
+  display: inline-block;
+  margin: 1%;
+}
+
+
+/* Light Box */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 2%;
+  float: none;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
+}
+
+
+/* Fixes for portrait scale lightbox images */
+
+#img7.lightbox img,
+#img8.lightbox img,
+#img11.lightbox img,
+#img12.lightbox img,
+#img15.lightbox img,
+#img16.lightbox img {
+  width: 30%;
+}

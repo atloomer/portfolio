@@ -1,0 +1,1087 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #E0DFD7;
+  color: #5B5A60;
+}
+
+
+/* Front Page Image Layout  */
+/* Image stretches to vh */
+header#front {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Main Typography */
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -0.125em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h3 {
+  letter-spacing: -0.03125em;
+}
+
+p {
+  letter-spacing: -0.0125em;
+}
+
+
+/* Navigation beginning w/ mobile */
+.large-nav {
+  display: none;
+}
+
+li#alexloomer {
+  font-weight: bold;
+  letter-spacing: -0.03125em;
+  font-size: 1.5em;
+  float: left;
+  padding: 20px 0 23px 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.09em;
+  color: #E0DFD7;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #2D2D2D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: .1em solid white;
+}
+
+nav a {
+  font-size: 0.750em;
+  text-transform: uppercase;
+  color: #E0DFD7;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  padding: 25px 5% 19px 5%;
+  margin: 10%;
+  transition: color .2s;
+}
+
+nav a:hover {
+  color: #5B5A60;
+}
+
+nav a:active {
+  color: #5B5A60;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  float: right;
+  padding-top: 20px;
+  padding-right: 2%;
+  display: inline-block;
+}
+
+
+/* Checkbox - Dropdown Nav */
+/* Life Hacks!! */
+#nav-input {
+  display: none;
+}
+
+#mobileMenu a {
+  width: 100%;
+  display: inline-block;
+  font-size: .7em;
+  padding: 2em 2em 2em 0;
+  margin: 0;
+}
+
+#mobileMenu a:hover {
+  background: #2D2D2D;
+  color: #E0DFD7;
+}
+
+#mobileMenu label {
+  color: #E0DFD7;
+  float: right;
+  margin: .4em .8em 0 0;
+  font-size: 2em;
+}
+
+#mobileMenu li {
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: .3em 0 0 0;
+}
+
+label[for="nav-input"] {
+  cursor: pointer;
+  display: inline-block;
+}
+
+#nav-input + ul {
+    display: none;
+}
+
+  #nav-input:checked + ul {
+    position: absolute;
+    top: 4.45em;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 9;
+  }
+
+
+/* Bio/Resume Mobile First */
+/* top section of resume/bio */
+#top-section {
+  width: 100%;
+  display: block;
+  background: #2D2D2D;
+  padding-bottom: 1%;
+  text-align: center;
+  color: #E0DFD7;
+}
+
+#top-section h1 {
+  display: inline-block;
+  letter-spacing: .35em;
+  margin-top: 5%;
+  padding: 1.5%;
+  border: .15em solid;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+#top-section h2 {
+  display: block;
+  margin: 0 auto;
+  font-size: .7em;
+  letter-spacing: .4em;
+}
+
+#top-section p {
+  display: block;
+  margin-bottom: 3.5%;
+  font-size: .5em;
+}
+
+
+/* bio portion */
+#right-section {
+  width: 100%;
+  margin: 0;
+  display: block;
+  padding-top: 5%;
+  text-align: center;
+  background: #CFDBC5;
+}
+
+#right-section p {
+  padding-bottom: 10%;
+}
+
+#right-section h3 {
+  display: inline-block;
+  padding: 1% 2%;
+}
+
+#right-section ul {
+  list-style-type: none;
+  padding-right: 0;
+}
+
+#right-section li {
+  padding: 1.6% 0;
+}
+
+#right-section p {
+  margin: 0 4%;
+}
+
+
+/* Skills section */
+#skills-mobile {
+  float: left;
+  width: 50%;
+  text-align: center;
+  display: block;
+  padding: 6.666666% 0 20%;
+  margin: 0 auto;
+  background: #E0DFD7;
+}
+
+#mobskills {
+  background: #E0DFD7;
+}
+
+#skills-mobile ul {
+  text-align: right;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+/* Skill Bars */
+#levels {
+  text-align: left;
+  float: right;
+  width: 50%;
+  margin-top: 0;
+  padding: 5.2% 0 20%;
+  background: #E0DFD7;
+}
+
+#levels ul {
+  padding-top: 0;
+  margin: 4.2% 2%;
+}
+
+#levels li {
+  padding: 2% 0;
+}
+
+.box {
+  height: .4em;
+  margin: 2% 0;
+  width: 5em;
+  border: .1em solid #2D2D2D;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#one {
+  height: .4em;
+  width: 2.8em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#two {
+  height: .4em;
+  width: 4.2em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#three {
+  height: .4em;
+  width: 2.5em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#four {
+  height: .4em;
+  width: 4em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#five {
+  height: .4em;
+  width: 4.5em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#six {
+  height: .4em;
+  width: 4.5em;
+  background: #2D2D2D;
+  display: block;
+}
+
+#left-section {
+  display: none;
+}
+
+#experience {
+  display: none;
+}
+
+
+/* Portfolio */
+#portfolio {
+  width: 100%;
+  display: block;
+  background: #2D2D2D;
+  padding: 10% 0;
+  text-align: center;
+  color: #E0DFD7;
+  clear: both;
+  text-align: center;
+}
+
+#portfolio h2 {
+  display: inline-block;
+  font-size: 1.2em;
+  letter-spacing: .35em;
+  margin-top: 0;
+  padding: 1.5%;
+  border: .15em solid;
+  font-weight: normal;
+}
+
+
+/* Contact form with FormSpree.io */
+form {
+  width: 80%;
+  background: #2D2D2D;
+  margin: 0 auto;
+  color: #E0DFD7;
+  border-radius: 8px;
+  padding-bottom: 3%;
+}
+
+form h1 {
+  margin: 2em 0;
+  padding-top: 5%;
+  text-align: center;
+  letter-spacing: .05em;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .9em;
+}
+
+label,
+input {
+  border-radius: 8px;
+  border: none;
+}
+
+input[type=submit] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #464242;
+}
+
+input[type=submit]:hover {
+  background: gray;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+}
+
+label {
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+input,
+textarea {
+  text-align: left;
+  background: #505050;
+}
+
+textarea {
+  border: none;
+}
+
+:focus {
+  outline-color: #E0DFD7;
+}
+
+
+/* Footer */
+#footer {
+  clear: both;
+  text-align: center;
+  width: 50%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+
+/* Media Queries */
+/* Mobile */
+@media screen and (min-width: 330) {
+  #levels li {
+    padding: 2% 0;
+  }
+}
+
+@media screen and (min-width: 628px) {
+  #levels li {
+    padding: 1.4% 0;
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /*  navigation  */
+  #mobileMenu {
+    display: none;
+  }
+  .large-nav {
+    display: block;
+  }
+  li#alexloomer {
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    padding: 10px 0 23px 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #E0DFD7;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: .1em solid white;
+  }
+  nav a {
+    font-size: 0.750em;
+    text-transform: uppercase;
+    color: #E0DFD7;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    padding: 25px 5% 19px 5%;
+    margin: 10%;
+  }
+  nav a:hover {
+    color: #5B5A60;
+  }
+  nav a:active {
+    color: #5B5A60;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  nav li {
+    float: right;
+    padding-top: 20px;
+    padding-right: 2%;
+    display: inline-block;
+  }
+  
+  /* Bio/Resume */
+  /* Top section of resume/bio */
+  #top-section {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #E0DFD7;
+    font-size: 2em;
+  }
+  #top-section h1 {
+    display: inline-block;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+  }
+  #top-section h2 {
+    display: block;
+    margin: 0 auto;
+    font-size: .5em;
+    letter-spacing: .4em;
+  }
+  #top-section p {
+    display: block;
+    margin-bottom: 3.5%;
+    font-size: .5em;
+  }
+  
+  /* left section of resume/bio */
+  #left-section {
+    float: left;
+    display: inline-block;
+    background: #CFDBC5;
+    width: 25%;
+    height: 700px;
+    padding: 5em 3.5em 5em 0;
+    text-align: right;
+  }
+  #left-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+  }
+  #left-section ul {
+    list-style-type: none;
+  }
+  #left-section li {
+    padding: .7em;
+  }
+  .italic {
+    font-style: italic;
+  }
+  
+  /* right section of resume/bio */
+  #right-section {
+    float: right;
+    display: inline-block;
+    width: 56%;
+    height: 700px;
+    padding: 5em;
+    text-align: left;
+    background: #E0DFD7;
+  }
+  #right-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+    clear: both;
+    padding: 0;
+  }
+  #right-section h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+  #right-section p {
+    margin-right: 2%;
+    margin-left: 0;
+    padding: 0;
+  }
+  #right-section ul {
+    list-style-type: disc;
+  }
+  #right-section li {
+    padding: 0;
+  }
+  
+  /* content not displayed */
+  #mobileContainer {
+    display: none;
+  }
+  #mobskills {
+    display: none;
+  }
+  .levels {
+    display: none;
+  }
+  #skills-mobile {
+    display: none;
+  }
+  #bars {
+    display: none;
+  }
+  #experience {
+    display: block;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding: 4% 0;
+    text-align: center;
+    color: #E0DFD7;
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+  #portfolio h2 {
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+  }
+}
+
+
+/* Tablet shift */
+@media screen and (min-width: 768px) {
+  #mobileMenu {
+    display: none;
+  }
+  .large-nav {
+    display: block;
+  }
+  li#alexloomer {
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    padding: 10px 0 23px 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #E0DFD7;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: .1em solid white;
+  }
+  nav a {
+    font-size: 0.750em;
+    text-transform: uppercase;
+    color: #E0DFD7;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    padding: 25px 5% 19px 5%;
+    margin: 10%;
+  }
+  nav a:hover {
+    color: #5B5A60;
+  }
+  nav a:active {
+    color: #5B5A60;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  nav li {
+    float: right;
+    padding-top: 20px;
+    padding-right: 2%;
+    display: inline-block;
+  }
+  
+  /* Bio/Resume */
+  /* Top section of resume/bio */
+  #top-section {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #E0DFD7;
+    font-size: 2em;
+  }
+  #top-section h1 {
+    display: inline-block;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+  }
+  #top-section h2 {
+    display: block;
+    margin: 0 auto;
+    font-size: .5em;
+    letter-spacing: .4em;
+  }
+  #top-section p {
+    display: block;
+    margin-bottom: 3.5%;
+    font-size: .5em;
+  }
+  
+  /* left section of resume/bio */
+  #left-section {
+    float: left;
+    display: inline-block;
+    background: #CFDBC5;
+    width: 25%;
+    height: 800px;
+    padding: 6% 5% 15% 1.5%;
+    text-align: right;
+  }
+  #left-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+  }
+  #left-section ul {
+    list-style-type: none;
+  }
+  #left-section li {
+    padding: .7em;
+  }
+  .italic {
+    font-style: italic;
+  }
+  
+  /* right section of resume/bio */
+  #right-section {
+    float: right;
+    display: inline-block;
+    width: 50%;
+    height: 700px;
+    padding: 6% 9% 22% 5%;
+    text-align: left;
+    background: #E0DFD7;
+    margin-right: 2%;
+  }
+  #right-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+    clear: both;
+    padding: 0;
+  }
+  #right-section h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+  #right-section p {
+    margin-right: 2%;
+    margin-left: 0;
+    padding: 0;
+  }
+  #right-section ul {
+    list-style-type: disc;
+  }
+  #right-section li {
+    padding: 0;
+  }
+  
+  /* content not displayed */
+  #mobileContainer {
+    display: none;
+  }
+  #mobskills {
+    display: none;
+  }
+  .levels {
+    display: none;
+  }
+  #skills-mobile {
+    display: none;
+  }
+  #bars {
+    display: none;
+  }
+  #experience {
+    display: block;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding: 4% 0;
+    text-align: center;
+    color: #E0DFD7;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  #portfolio h2 {
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+    transition: all 1s;
+  }
+  #portfolio:hover h2 {
+  padding: 1.5% 10%;
+  color: #5B5A60;
+  border-top: .15em solid #2D2D2D;
+  border-bottom: .15em solid #2D2D2D;
+}
+  
+  /*  Tablet Form  */
+  form {
+    border-radius: 15px;
+    width: 80%;
+  }
+  form h1 {
+    font-size: 1.7em;
+  }
+  #contact-left {
+    height: 9em;
+    width: 40%;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 8%;
+    font-size: 1.1em;
+  }
+  #contact-right {
+    padding-bottom: 8%;
+    height: 10em;
+    width: 60%;
+    float: right;
+    font-size: 1.1em;
+  }
+  input[type=submit] {
+    font-size: 1.1em;
+    clear: both;
+  }
+  #contact-right textarea {
+    border-radius: 8px;
+  }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  /*  navigation  */
+  #mobileMenu {
+    display: none;
+  }
+  .large-nav {
+    display: block;
+  }
+  li#alexloomer {
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    padding: 10px 0 23px 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #E0DFD7;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: .1em solid white;
+  }
+  nav a {
+    font-size: 0.750em;
+    text-transform: uppercase;
+    color: #E0DFD7;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    padding: 25px 5% 19px 5%;
+    margin: 10%;
+  }
+  nav a:hover {
+    color: #5B5A60;
+  }
+  nav a:active {
+    color: #5B5A60;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  nav li {
+    float: right;
+    padding-top: 20px;
+    padding-right: 2%;
+    display: inline-block;
+  }
+  
+  /* Bio/Resume */
+  /* Top section of resume/bio */
+  #top-section {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #E0DFD7;
+    font-size: 2em;
+  }
+  #top-section h1 {
+    display: inline-block;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+  }
+  #top-section h2 {
+    display: block;
+    margin: 0 auto;
+    font-size: .5em;
+    letter-spacing: .4em;
+  }
+  #top-section p {
+    display: block;
+    margin-bottom: 3.5%;
+    font-size: .5em;
+  }
+  
+  /* left section of resume/bio */
+  #left-section {
+    float: left;
+    display: inline-block;
+    background: #CFDBC5;
+    width: 25%;
+    height: 800px;
+    padding: 6% 5% 5% 1.5%;
+    text-align: right;
+  }
+  #left-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+  }
+  #left-section ul {
+    list-style-type: none;
+  }
+  #left-section li {
+    padding: .7em;
+  }
+  .italic {
+    font-style: italic;
+  }
+  
+  /* right section of resume/bio */
+  #right-section {
+    float: right;
+    display: inline-block;
+    width: 50%;
+    height: 700px;
+    padding: 6% 9% 6% 5%;
+    text-align: left;
+    background: #E0DFD7;
+    margin-right: 2%;
+  }
+  #right-section h3 {
+    font-size: 1.5em;
+    letter-spacing: .3em;
+    clear: both;
+    padding: 0;
+  }
+  #right-section h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+  #right-section p {
+    margin-right: 2%;
+    margin-left: 0;
+    padding: 0;
+  }
+  #right-section ul {
+    list-style-type: disc;
+  }
+  #right-section li {
+    padding: 0;
+  }
+  
+  /* content not displayed */
+  #mobileContainer {
+    display: none;
+  }
+  #mobskills {
+    display: none;
+  }
+  .levels {
+    display: none;
+  }
+  #skills-mobile {
+    display: none;
+  }
+  #bars {
+    display: none;
+  }
+  #experience {
+    display: block;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    width: 100%;
+    display: block;
+    background: #2D2D2D;
+    padding: 4% 0;
+    text-align: center;
+    color: #E0DFD7;
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+  #portfolio h2 {
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: .35em;
+    margin-top: 3%;
+    padding: 1.5%;
+    border: .15em solid;
+    font-weight: normal;
+  }
+  form {
+    border-radius: 15px;
+    width: 70%;
+    font-size: 1.3em;
+  }
+  form h1 {
+    font-size: 1.7em;
+  }
+  #contact-left {
+    height: 9em;
+    width: 40%;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 8%;
+    font-size: 1.1em;
+  }
+  #contact-right {
+    padding-bottom: 8%;
+    height: 10em;
+    width: 60%;
+    float: right;
+    font-size: 1.1em;
+  }
+  input[type=submit] {
+    font-size: 1.1em;
+    clear: both;
+  }
+  #contact-right textarea {
+    border-radius: 8px;
+    padding-bottom: 1.2em;
+  }
+  
+}
+
+
+/* Larger Screen sizes */
+@media screen and (min-width: 2000px) {
+  div#left-section {
+    padding: 6% 5% 5% 1.5%;
+  }
+}
