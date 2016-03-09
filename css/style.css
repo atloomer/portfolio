@@ -69,6 +69,21 @@ img {
   display: block;
 }
 
+.lightbox:target img {
+  animation: fadein .2s ease-in-out;
+}
+
+/* Keyframe transitions */
+@keyframes fadein {
+  0% {
+    transform: scale(0); 
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Fixes for portrait scale lightbox images */
 
 #img7.lightbox img,
