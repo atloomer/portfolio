@@ -1,6 +1,3 @@
-/* NOTE: REPLACE THUMBNAILS WITH SMALLER IMAGE SIZES FOR QUICKER LOADING */
-
-
 /* External Stylesheet to my main site */
 
 li#alexloomer {
@@ -38,6 +35,7 @@ body {
   display: inline-block;
   margin: 1%;
   z-index: -2;
+  background: #E0DFD7;
 }
 
 img {
@@ -71,7 +69,6 @@ img {
   display: block;
 }
 
-
 /* Fixes for portrait scale lightbox images */
 
 #img7.lightbox img,
@@ -82,8 +79,6 @@ img {
 #img16.lightbox img {
   max-width: 85%;
 }
-
-/* Footer */
 
 
 /* Media Queries */
@@ -130,6 +125,7 @@ img {
   max-height: 90%;
   margin-top: 2%;
   float: none;
+  transition: background 1s;
 }
   
 #img7.lightbox img,
