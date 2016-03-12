@@ -58,13 +58,12 @@ p {
 }
 
 li#alexloomer {
-  font-weight: bold;
-  letter-spacing: -0.03125em;
+  font-weight: lighter;
+  letter-spacing: 0.02em;
   font-size: 1.5em;
   float: left;
   padding: 20px 0 23px 20px;
   text-transform: uppercase;
-  letter-spacing: -0.09em;
   color: #E0DFD7;
 }
 
@@ -112,7 +111,7 @@ nav li {
 
 
 /* Checkbox - Dropdown Nav */
-/* Life Hacks!! */
+/* CSS Hacks!! */
 #nav-input {
   display: none;
 }
@@ -339,7 +338,7 @@ ul:hover #six {
   }
   
   100% {
-    transform: 100%;
+    width: 100%;
   }
 }
 
@@ -481,12 +480,12 @@ textarea {
     display: block;
   }
   li#alexloomer {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 2em;
     float: left;
     padding: 10px 0 23px 20px;
     text-transform: uppercase;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.02em;
     color: #E0DFD7;
   }
   nav {
@@ -729,12 +728,12 @@ textarea {
     display: block;
   }
   li#alexloomer {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 2em;
     float: left;
     padding: 10px 0 23px 20px;
     text-transform: uppercase;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.02em;
     color: #E0DFD7;
   }
   nav {
@@ -956,12 +955,12 @@ textarea {
     display: block;
   }
   li#alexloomer {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 2em;
     float: left;
     padding: 10px 0 23px 20px;
     text-transform: uppercase;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.02em;
     color: #E0DFD7;
   }
   nav {
