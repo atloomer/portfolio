@@ -1,6 +1,5 @@
-/* NOTE: ADD IMAGE CAPTIONS BEFORE FINAL */
-
 /* External Stylesheet to my main site */
+/* Seperate stylesheet for quicker editing, personal pref */
 
 li#alexloomer {
   font-size: 1.5em;
@@ -31,6 +30,7 @@ body {
 /* Images */
 
 #border {
+  overflow: hidden;
   position: relative;
   float: left;
   width: 48%;
@@ -44,6 +44,34 @@ img {
   width: 100%;
 }
 
+/* Thumbnail Hover */
+
+#border:hover img {
+  opacity: .8;
+}
+
+/* Image Caption Overlays */
+
+figcaption {
+  height: 55%;
+  width: 100%;
+  font-size: .5em;
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+/* Overlay transition */
+
+#border:hover figcaption {
+  opacity: 1;
+}
 
 /* Light Box */
 
@@ -84,6 +112,19 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+/* Lightbox Paragraphs */
+a {
+  text-decoration: none;
+}
+
+.lightbox p {
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  animation: fadein .2s ease-in-out;
 }
 
 /* Fixes for portrait scale lightbox images */
@@ -153,4 +194,10 @@ img {
 #img16.lightbox img {
   max-width: 30%;
 }
+}
+
+@media screen and (min-width: 628px) {
+  figcaption {
+    font-size: 1em;
+  }
 }
