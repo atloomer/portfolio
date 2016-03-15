@@ -1,3 +1,6 @@
+/* NOTE: EDIT CAPTIONS FOR LANDSCAPE BEFORE FINAL */
+
+
 /* External Stylesheet to my main site */
 /* Seperate stylesheet for quicker editing, personal pref */
 
@@ -144,6 +147,10 @@ a {
 @media screen and (orientation: landscape) {
   .lightbox img {
     max-width: 60%;
+    }
+  .lightbox p {
+    display: none;
+  }
   }
   
 /*  Fixes for portrait scale  */
