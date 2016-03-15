@@ -120,7 +120,7 @@ a {
 }
 
 .lightbox p {
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -144,10 +144,10 @@ a {
 @media screen and (orientation: landscape) {
   .lightbox img {
     max-width: 60%;
-    }
+  }
+  
   .lightbox p {
     display: none;
-  }
   }
   
 /*  Fixes for portrait scale  */
